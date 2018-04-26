@@ -5,10 +5,11 @@ import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDatabase;
 import com.arangodb.entity.BaseDocument;
 import com.arangodb.entity.CollectionEntity;
+import mockData.Mocker;
 
 
 public class ArangoDBFactory  extends Exception{
-    private ArangoDB arangoDB;
+    protected ArangoDB arangoDB;
 
     public ArangoDBFactory(){
          arangoDB = new ArangoDB.Builder().build();
@@ -32,13 +33,5 @@ public class ArangoDBFactory  extends Exception{
         return collectionEntity;
       }
 
-    public CollectionEntity createDocument(String dbName, String collectionName, BaseDocument document){
-       CollectionEntity collectionEntity=null;
-
-            arangoDB.db(dbName).collection(collectionName).insertDocument(document);
-            System.out.println("Collection created: " + collectionName);
-
-        return collectionEntity;
-      }
 
 }
