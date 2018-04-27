@@ -4,7 +4,7 @@
     <employee id="1001">
         <firstname>yong</firstname>
         <lastname>mook kim</lastname>
-        <salary>100000</salary>
+        <salary>300000</salary>
         <department>Engineering</department>
         <designation>Full Stack Developer</designation>
     </employee>
