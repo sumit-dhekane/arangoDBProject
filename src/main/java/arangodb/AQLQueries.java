@@ -4,7 +4,6 @@ import com.arangodb.ArangoCursor;
 import com.arangodb.ArangoDBException;
 import com.arangodb.entity.BaseDocument;
 import com.arangodb.util.MapBuilder;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
